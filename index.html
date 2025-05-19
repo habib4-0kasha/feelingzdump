@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "MWGIug0Lsn4cBtzyZ",
-      });
-   })();
-</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FEELINGZ DUMP</title>
-  <link rel="preload" href="GhostHand.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("MWGIug0Lsn4cBtzyZ");
+        })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FEELINGZ DUMP</title>
+    <link rel="preload" href="GhostHand.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>FEELINGZ DUMP</h1>
-  </header>
+    <header>
+        <h1>FEELINGZ DUMP</h1>
+    </header>
 
-  <main>
-    <div class="form-container">
-        <form id="dumpForm" name="dumpForm">
-            <label for="name">was yo name:</label>
-            <input type="text" id="name" name="name" required />
+    <main>
+        <div class="form-container">
+            <form id="dumpForm" name="dumpForm">
+                <label for="name">was yo name:</label>
+                <input type="text" id="name" name="name" required />
 
-        <label for="title">topic of today's tea:</label>
-        <input type="text" id="title" name="title" required />
+                <label for="title">topic of today's tea:</label>
+                <input type="text" id="title" name="title" required />
 
-        <label for="bother">what's bothering you today:</label>
-        <input type="text" id="bother" name="bother" required />
+                <label for="bother">what's bothering you today:</label>
+                <input type="text" id="bother" name="bother" required />
 
-        <label for="mood">how u feelin?</label>
-        <select id="mood" name="mood" required>
-          <option value="" disabled selected>choose</option>
-          <option value="Happy">chillin</option>
-          <option value="Sad">not ok rn</option>
-          <option value="Angry">what the fuck man</option>
-          <option value="Anxious">wtf how the HELL does this happen</option>
-        </select>
+                <label for="mood">how u feelin?</label>
+                <select id="mood" name="mood" required>
+                    <option value="" disabled selected>choose</option>
+                    <option value="Happy">chillin</option>
+                    <option value="Sad">not ok rn</option>
+                    <option value="Angry">what the fuck man</option>
+                    <option value="Anxious">wtf how the HELL does this happen</option>
+                </select>
 
-        <label for="severity">how extreme is it rn</label>
-        <select id="severity" name="severity" required>
-          <option value="" disabled selected>choose</option>
-          <option value="Mild">it can wait</option>
-          <option value="Moderate">bitch answer</option>
-          <option value="Severe">ANSWER RIGHT NOW??</option>
-        </select>
+                <label for="severity">how extreme is it rn</label>
+                <select id="severity" name="severity" required>
+                    <option value="" disabled selected>choose</option>
+                    <option value="Mild">it can wait</option>
+                    <option value="Moderate">bitch answer</option>
+                    <option value="Severe">ANSWER RIGHT NOW??</option>
+                </select>
 
-        <button type="submit">dump that shit ho</button>
-      </form>
-      <p id="thankYouMessage" class="hidden">thanks for dumping! please allow habiba some time to get back to you :3</p>
-    </div>
-  </main>
+                <button type="submit">dump that shit ho</button>
+            </form>
+            <p id="thankYouMessage" class="hidden">thanks for dumping! please allow habiba some time to get back to you :3</p>
+        </div>
+    </main>
 
-   <script src="js/script.js"></script>
+    <script src="js/script.js"></script> 
 </body>
 </html>
