@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #a32136;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  header {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  header h1 {
+    font-family: 'Ghost Hand', cursive;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: 'Ghost Hand';
+    src: url('GhostHand.ttf') format('truetype');
+  }  
+
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+  
+    header h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    background-color: #a32136;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #8b1b2f;
+  }
+  
+  #thankYouMessage {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #333;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
